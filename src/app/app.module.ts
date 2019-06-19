@@ -3,15 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DirectorsListComponent } from './directors-list/directors-list.component';
 import { TopbarComponent } from './topbar/topbar.component';
+import { DirectorsListComponent } from './directors-list/directors-list.component';
+import { DirectorsDetailComponent } from './directors-detail/directors-detail.component';
 import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DirectorsListComponent,
     TopbarComponent,
+    DirectorsListComponent,
+    DirectorsDetailComponent,
     AboutComponent,
   ],
   imports: [
