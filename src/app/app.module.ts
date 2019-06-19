@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DirectorsListComponent } from './directors-list/directors-list.component';
+import { TopbarComponent } from './topbar/topbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DirectorsListComponent,
+    TopbarComponent,
   ],
   imports: [
     BrowserModule,
