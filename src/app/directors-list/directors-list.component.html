@@ -1,7 +1,17 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-2 bg-light director-box" *ngFor="let director of directors">
-      <span class="badge">{{director.id}}</span> {{director.name}}
+      <div class="card">
+        <div class="card-body">
+          <span class="badge">{{director.id}}</span> {{director.name}}
+        </div>
+        <div class="card-footer">
+          <a
+            [routerLink]="[ '/directors', director.id ]"
+            class="btn btn-primary"
+          >Info</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

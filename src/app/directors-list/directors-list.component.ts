@@ -19,7 +19,7 @@ export class DirectorsListComponent implements OnInit {
 
   getDirectors(): void {
     this.directorService.getDirectors()
-        .subscribe(directors => this.directors = directors);
+      .subscribe(directors => this.directors = directors);
   }
 
 }
