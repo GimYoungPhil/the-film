@@ -22,4 +22,8 @@ export class DirectorsListComponent implements OnInit {
       .subscribe(directors => this.directors = directors);
   }
 
+  backgroundImage(url: string): { } {
+    return `url(${url})`;
+  }
+
 }
