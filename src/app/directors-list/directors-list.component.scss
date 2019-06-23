@@ -1,3 +1,12 @@
 .card {
   height: 20rem;
 }
+
+.card-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.director-name {
+  writing-mode: vertical-rl;
+}

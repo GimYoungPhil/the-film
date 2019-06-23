@@ -1,14 +1,14 @@
 <div class="container-fluid px-0">
   <div class="row no-gutters">
-    <div class="col-6 col-lg-2 bg-light" *ngFor="let director of directors">
-      <div class="card">
-        <div class="card-img h-100" [style.background]="backgroundImage(director.imageUrl)"></div>
-        <div class="card-img-overlay">
-          {{director.name}}
-          <a
+    <div class="col-6 col-lg-2 bg-light p-1" *ngFor="let director of directors">
+      <div class="card border-0">
+        <img [src]="director.imageUrl" class="card-img rounded-0" alt="">
+        <div class="card-img-overlay p-0">
+          <h4 class="director-name text-white m-0">{{director.name}}</h4>
+          <!-- <a
             [routerLink]="[ '/directors', director.id ]"
             class="btn btn-primary"
-          >Info</a>
+          >Info</a> -->
         </div>
 
 
